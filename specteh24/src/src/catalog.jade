@@ -1,0 +1,195 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		title Спецтех24 - аренда спецтехники Cat
+		link(rel='stylesheet', href='css/style.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic')
+
+	body
+		header.stripe
+			.container
+				.row
+
+					// Лого
+					.col-3
+						a.logo(href='#')
+							img.logo__img(src='img/logo.svg', alt='')
+							span.logo__txt
+								b Спецтех
+								| 24
+
+					// Главное меню
+					.col-9
+						nav.nav.pull-right
+							ul
+								li: a.nav__link(href='index.html') О компании
+								li: a.nav__link.nav__link--active(href='catalog.html') Каталог
+								li: a.nav__link(href='portfolio.html') Портфолио
+								li: a.nav__link(href='contact.html') Контакты
+								li: a.nav__link.nav__link--call(href='#') Заказать звонок
+
+		main
+			// Заголовок
+			section.cat-subheader
+				.container
+					.row
+
+						.cat-subheader__left.pull-left
+							h2.cat-subheader__title Техника: Экскаваторы в аренду
+							h1.cat-subheader__txt
+								| Спецтех это безотказная техника, принципиально новый уровень сервиса и качества. 
+								br
+								| Если вы искали идеальных партнеров на объект - Вы нашли их.
+								br
+								| Что понадобится Вам сегодня?
+
+						.cat-subheader__right.pull-right
+							a.cat-subheader__right__btn(href='') Мне нужна консультация
+							span.cat-subheader__right__txt Оставьте заявку и уже сегодня мы вам перезвоним
+
+			section.cat
+				.container
+					.row
+						.col-4
+
+							// Левая колонка
+							.cat-menu
+								h2.cat-menu__title Вся техника
+
+								nav.cat-menu__nav
+									ul
+										li: a.cat-menu__link(href='') Гусеничные экскаваторы
+										li: a.cat-menu__link.cat-menu__link--active(href='') Колесные экскаваторы
+										li: a.cat-menu__link(href='') Мини-экскаваторы
+										li: a.cat-menu__link(href='') Автокраны
+										li: a.cat-menu__link(href='') Фронтальные погрузчики
+										li: a.cat-menu__link(href='') Навесное оборудование
+										li: a.cat-menu__link(href='') Дизельгенераторы
+
+								button.btn.btn--dark.cat-menu__btn Скачать каталог в PDF
+
+						.col-8
+							// Правая колонка
+							.cat-items
+								.row
+
+									.col-6
+										.item
+											h3.item__name Колесный экскаватор Cat M315D
+											img.item__img(src='img/cat-item.jpg', alt='ex')
+											span.price
+												| 25 000
+												span.price__slash  /
+												span.price__txt  месяц
+											a.item__btn.item__btn--yellow(href='') Арендовать
+											a.item__btn.item__btn--dark(href='') Подробнее
+
+									.col-6
+										.item
+											h3.item__name Колесный экскаватор Cat M315D
+											img.item__img(src='img/cat-item.jpg', alt='ex')
+											span.price
+												| 25 000
+												span.price__slash  /
+												span.price__txt  месяц
+											a.item__btn.item__btn--yellow(href='') Арендовать
+											a.item__btn.item__btn--dark(href='') Подробнее
+
+								.row
+									.col-6
+										.item.item--new
+											h3.item__name Колесный экскаватор Cat M315D
+											img.item__img(src='img/cat-item.jpg', alt='ex')
+											span.price
+												| 25 000
+												span.price__slash  /
+												span.price__txt  месяц
+											a.item__btn.item__btn--yellow(href='') Арендовать
+											a.item__btn.item__btn--dark(href='') Подробнее
+
+									.col-6
+										.item
+											h3.item__name Колесный экскаватор Cat M315D
+											img.item__img(src='img/cat-item.jpg', alt='ex')
+											span.price
+												| 25 000
+												span.price__slash  /
+												span.price__txt  месяц
+											a.item__btn.item__btn--yellow(href='') Арендовать
+											a.item__btn.item__btn--dark(href='') Подробнее
+
+							// Пагинация
+							.cat-pagination
+								nav
+									ul.pagination
+										li: a.pagination__link.pagination__link--active(href='#') 1
+										li: a.pagination__link(href='#') 2
+										li: a.pagination__link(href='#') 3
+										li: a.pagination__link(href='#') 4
+
+			// Спецпредложения
+			.cat-offer
+				.container
+					h2.cat-offer__title Спецпредложения
+
+					.row
+					
+						.col-4
+							.item.item--sale
+								h3.item__name Колесный экскаватор Cat M315D
+								img.item__img(src='img/cat-item.jpg', alt='ex')
+								span.price.price--red 25 000
+								span.price.price--offer
+									| 25 000
+									span.price__slash  /
+									span.price__txt  месяц
+								a.item__btn.item__btn--yellow(href='') Арендовать
+								a.item__btn.item__btn--dark(href='') Подробнее
+						
+						.col-4
+							.item
+								h3.item__name Колесный экскаватор Cat M315D
+								img.item__img(src='img/cat-item.jpg', alt='ex')
+								span.price.price--red 25 000
+								span.price.price--offer
+									| 25 000
+									span.price__slash  /
+									span.price__txt  месяц
+								a.item__btn.item__btn--yellow(href='') Арендовать
+								a.item__btn.item__btn--dark(href='') Подробнее
+
+						.col-4
+							.item
+								h3.item__name Колесный экскаватор Cat M315D
+								img.item__img(src='img/cat-item.jpg', alt='ex')
+								span.price.price--red 25 000
+								span.price.price--offer
+									| 25 000
+									span.price__slash  /
+									span.price__txt  месяц
+								a.item__btn.item__btn--yellow(href='') Арендовать
+								a.item__btn.item__btn--dark(href='') Подробнее
+
+		footer
+			.container
+				.row
+
+					// Лого
+					.col-3
+						a.logo.logo--footer(href='#')
+							img.logo__img.logo__img--footer(src='img/logo__footer.svg', alt='')
+							span.logo__txt.logo__txt--footer
+								b Спецтех
+								| 24
+
+					// Главное меню
+					.col-9
+						nav.nav.pull-right
+							ul
+								li: a.nav__link.nav__link--footer(href='#') О компании
+								li: a.nav__link.nav__link--footer(href='#') Каталог
+								li: a.nav__link.nav__link--footer(href='#') Портфолио
+								li: a.nav__link.nav__link--footer(href='#') Контакты
+								li: a.nav__link.nav__link--footer.nav__link--call--footer(href='#') Заказать звонок
+

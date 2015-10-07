@@ -1,0 +1,133 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		title Спецтех24 - аренда спецтехники Cat
+		link(rel='stylesheet', href='css/style.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic')
+
+	body
+		header.stripe
+			.container
+				.row
+
+					// Лого
+					.col-3
+						a.logo(href='#')
+							img.logo__img(src='img/logo.svg', alt='')
+							span.logo__txt
+								b Спецтех
+								| 24
+
+					// Главное меню
+					.col-9
+						nav.nav.pull-right
+							ul
+								li: a.nav__link(href='index.html') О компании
+								li: a.nav__link(href='catalog.html') Каталог
+								li: a.nav__link.nav__link--active(href='portfolio.html') Портфолио
+								li: a.nav__link(href='contact.html') Контакты
+								li: a.nav__link.nav__link--call(href='#') Заказать звонок
+
+		main
+			// Блок с навигацией по видам работ
+			section.port-subheader
+
+				.container
+					.row
+
+						h1.h1.port-subheader__title.pull-left Портфолио
+
+						nav.port__nav.pull-right
+							ul
+								li: a.port-nav__link(href='') Все работы
+								li: a.port-nav__link(href='') Строительство
+								li: a.port-nav__link(href='') Демонтаж
+								li: a.port-nav__link(href='') Земляные работы
+								li: a.port-nav__link(href='') Перевозка
+
+			// Работы из портфолио
+			section.port__item.port__item--1
+				.container
+					.item__description
+						h2.description__title Строительство жилого дома в деревушке на севере холма
+						p
+							| Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.
+						a.btn.btn-description(href='') Подробнее
+
+			section.port__item.port__item--2
+				.container
+					.item__description
+						h2.description__title Строительство жилого дома в деревушке на севере холма
+						p
+							| Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.
+						a.btn.btn-description(href='') Подробнее
+
+			section.port__item.port__item--3
+				.container
+					.item__description
+						h2.description__title Строительство жилого дома в деревушке на севере холма
+						p
+							| Спецтех24 - это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.
+						a.btn.btn-description(href='') Подробнее
+
+			// заказ консультации
+			section.call-promo
+				.container
+					h2.call-promo__title Закажите бесплатную консультацию по подбору подходящей техники
+					form(action='')
+						.call-promo__form-group
+							.row
+								.col-3
+									input.input_sp(type='text', placeholder='Как вас зовут?')
+								.col-3
+									input(type='text', placeholder='Номер для связи')
+								.col-3
+									input(type='date', placeholder='Выберите дату')
+								.col-3
+									input.btn.call-promo__btn(type='submit' value='Заказать консультацию')
+
+			// преимущества
+			section.advantage
+				.container
+					.advantages
+						.row
+
+							.advantages__block.col-3
+								img.advantages__img(src='img/advant1.svg', alt='Обслуживание')
+								span.advantages__txt Техника проходит обязательное обслуживание перед каждым выездом
+
+							.advantages__block.col-3
+								img.advantages__img(src='img/advant2.svg', alt='Спец. сигналы')
+								span.advantages__txt Все машины оборудованы спец. сигналами, для предупреждения аварий
+
+							.advantages__block.col-3
+								img.advantages__img(src='img/advant3.svg', alt='Ограждения')
+								span.advantages__txt Привезем модные строительные ограждения к каждому заказу от 20&nbsp;000
+
+							.advantages__block.col-3
+								img.advantages__img(src='img/advant4.svg', alt='Операторы')
+								span.advantages__txt С техникой приедут квалифицированные операторы и водители
+		footer
+			.container
+				.row
+
+					// Лого
+					.col-3
+						a.logo.logo--footer(href='#')
+							img.logo__img.logo__img--footer(src='img/logo__footer.svg', alt='')
+							span.logo__txt.logo__txt--footer
+								b Спецтех
+								| 24
+
+					// Главное меню
+					.col-9
+						nav.nav.pull-right
+							ul
+								li: a.nav__link.nav__link--footer(href='#') О компании
+								li: a.nav__link.nav__link--footer(href='#') Каталог
+								li: a.nav__link.nav__link--footer(href='#') Портфолио
+								li: a.nav__link.nav__link--footer(href='#') Контакты
+								li: a.nav__link.nav__link--footer.nav__link--call--footer(href='#') Заказать звонок
+
+
