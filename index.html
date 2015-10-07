@@ -1,24 +1,13 @@
----
-layout: default
----
-
-<div class="home">
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post py3">
-        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
-      </div>
-    {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>None</title>
+</head>
+<body>
+  <div style="text-align: center">
+    <h2>Аттеншен!</h2>
+    <p>Возможно скоро здесь что-то будет</p>
   </div>
-
-  {% include pagination.html %}
-</div>
+</body>
+</html>
