@@ -1,0 +1,349 @@
+// HEADER
+
+header
+	padding 15px 0 15px
+	background-color #ffcd34
+	
+
+.logo
+	text-decoration none
+
+	&__img
+		vertical-align middle
+		width 47px
+		margin 5px 0
+		
+	&__txt
+		vertical-align middle
+		color #000
+		font-size 24px
+		letter-spacing 10
+		margin-left 15px
+
+.nav ul
+	margin 0
+	
+	li
+		display inline-block
+
+.nav__link
+	box-sizing border-box
+	border 2px solid transparent
+	font-size 16px
+	line-height 46px
+	margin 0 5px
+	padding 11px
+	color rgba(#000 .55)
+	transition: ease-out 0.2s;
+	
+.nav__link:hover
+	border 2px solid rgba(#202e3b .3)
+	transition: ease-out 0.2s;
+	
+.nav__link:active
+	border 2px solid rgba(#202e3b .6)
+
+.nav__link--active
+	color #000
+	pointer-events none
+	
+.nav__link--active:hover
+	border 2px solid transparent
+
+.nav__link--call
+	padding 18px 32px 17px 26px
+	background-color #ffe184
+	color #000
+	border 0px solid #000
+
+.nav__link--call:hover
+	background-color #ffecb2
+	border none
+
+.nav__link--call:active
+	background-color #f6bf16
+
+// ГЛАВНЫЙ ЭКРАН
+
+.main-promo
+	background-image url(../img/ekskavator-main.jpg)
+	background-repeat no-repeat
+	background-size cover
+	padding 140px 0 130px
+	position relative
+	
+.main-promo:before
+	gradient-line()
+
+.main-promo__content
+	box-sizing border-box
+	text-align center
+	width 620px
+	margin 0 auto
+
+.main-promo__title
+	color #fff
+	font-size 44px
+	font-weight 700
+	letter-spacing 10
+	text-transform uppercase
+
+.main-promo__description
+	color #fff
+	font-size 20px
+	font-weight normal
+	margin-bottom 32px
+
+.main-promo__btn
+	padding 10px 52px 10px 20px
+	border 2px solid #ffcd34
+	color #fff
+	font-size 18px
+	font-weight 700
+	display inline-block
+	position relative
+	
+.main-promo__btn:after
+	content ''
+	position absolute
+	right 25px
+	top 50%
+	transform translateY(-50%)
+	sprite($arr_right)
+	
+
+// ЗАКАЗ КОНСУЛЬТАЦИИ
+
+.call-promo
+	background-color #202e3b
+	padding 44px 0 40px 0
+	position relative
+
+.call-promo:before
+	gradient-line()
+
+.call-promo__title
+	font-size 24px
+	color #ffcd34
+	margin 0
+	padding 0 10px
+	font-weight normal
+
+input
+	width 100%
+	height 45px
+	box-sizing border-box
+	border 1px solid #ffcd34
+	background-color transparent
+	padding 15px 19px
+	margin-top 40px
+	font-size 16px
+	color #fff
+
+::-webkit-input-placeholder
+	color: #fff
+
+:-moz-placeholder
+	color: #fff
+
+::-moz-placeholder
+	color: #fff
+
+:-ms-input-placeholder
+	color: #fff
+
+.call-promo__btn
+	width 220px
+	height 45px
+	box-sizing border-box
+	padding 12px 10px
+	margin-top 40px
+	background-color #ffcd34
+	border none
+	font-weight 700
+	color #202e3b
+	font-size 16px
+
+.call-promo__btn:hover
+	background-color #ffd966
+	
+.call-promo__btn:active
+	background-color #f6bf16
+
+
+// ПРЕИМУЩЕСТВА
+
+.advantage
+	padding 45px 0
+	
+.advantages__img
+	vertical-align middle
+
+.advantages__txt
+	display inline-block
+	font-size 13px
+	line-height 16px
+	width 70%
+	margin-left 20px
+	padding-left 0
+	vertical-align middle
+	
+.advantages__block
+	padding 0
+
+.advantages__block:nth-child(1)
+	width 27%
+	padding-left 10px
+	
+.advantages__block:nth-child(3)
+	width 27%
+	
+.advantages__block:nth-child(3)
+	width 27%
+
+.advantages__block:nth-child(4)
+	width 20%
+	padding-right 0
+
+
+// БОКОВОЕ МЕНЮ И ТАБЛИЦА
+
+.special
+	background-color #f3f3f3
+	padding 40px 0
+
+.h2
+	color #000
+	font-weight 700
+	font-size 26px
+	margin-top 0
+
+.all-tech-menu ul
+	list-style-type none
+	margin 0
+	padding 0
+	
+	li
+		margin-bottom 20px
+		a
+			text-decoration underline
+			color #202e3b
+
+.table
+	width 700px
+	border-collapse collapse
+	
+	tr th:first-child
+		width 280px
+		text-align left
+		
+	tr th:nth-child(n+2)
+		width 140px
+		text-align left
+	
+	th, td
+		box-sizing border-box
+		padding 12px
+		margin 0
+		
+	thead
+		background-color #dfdfdf
+
+	tbody tr:nth-child(2n)
+		background-color #fff
+
+
+// БЛОК РЕКОМЕНДАЦИЙ
+
+.recommendation
+	background-color #202e3b
+	padding 54px 0 40px
+	position relative
+	
+.recommendation:before
+	gradient-line()
+
+.h2--light
+	color #fff
+
+.no-fat
+	font-weight normal
+
+.facts ul
+	list-style-type none
+	padding-left 0
+
+.fact-digital
+	font-size 38px
+	color #f1b132
+	vertical-align middle
+
+.fact-txt
+	font-size 18px
+	color #9e9e9e
+	font-weight 700
+	margin-left 15px
+	vertical-align middle
+
+.client
+	margin-bottom 40px
+	
+.clients-foto
+	border-radius 4px
+
+.clients-bq
+	display inline-block
+	width 75%
+	vertical-align top
+	margin-left 22px
+	
+	blockquote
+		margin 0
+		font-size 18px
+		font-style italic
+		color #fff
+		font-weight normal
+
+.clients-cite
+	display inline-block
+	color #f1b132
+	font-weight 700
+	margin-top 15px
+	font-size 18px
+	
+
+// MAP
+
+.map
+	position relative
+	padding 14px 0 0 0
+	
+.map:before
+	gradient-line()
+
+// FOOTER
+
+footer
+	background-color #202e3b
+	padding 20px 0
+	
+.logo__txt--footer
+	color #ffcd34
+	
+.nav__link--footer
+	color #fff
+	
+	&:hover
+		border 2px solid rgba(#fff .3)
+	
+	&:active
+		border 2px solid rgba(#fff .6)
+
+.nav__link--call--footer
+	color #ffcd34
+	
+	&:hover
+		border 2px solid transparent
+	
+	&:active
+		border 2px solid transparent
