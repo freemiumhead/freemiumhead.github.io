@@ -1,0 +1,116 @@
+body
+	font-family 'Fira Sans', sans-serif
+	color #444
+a
+	text-decoration none
+	
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search]
+	appearance none
+	-moz-appearance none
+	-webkit-appearance none
+
+	border-radius 0
+	-moz-border-radius 0
+	-webkit-border-radius 0
+	
+.h2
+	font-size 32px
+	font-weight 500
+	color #444
+	position relative
+	margin-bottom 50px
+	margin-top 0
+	line-height 26px
+	
+	&:after
+		h2-after()
+		
+	&--center:after
+		h2-after-center()
+
+hr
+	height 0
+	margin-top 110px
+	border none
+	border-bottom 1px solid #ccc
+
+.col
+	float left
+	padding 0 18px
+	box-sizing border-box
+	
+.row
+	margin-left -18px
+	margin-right -18px
+
+.row:after
+.clearfix:after
+	content ""
+	display block
+	clear both
+
+.pull-right
+	 float right
+	 
+.pull-left
+	 float left
+	 
+.text-right
+	text-align right
+	
+.text-center 
+	text-align center
+	
+.inline-block 
+	display inline-block  
+	
+ul.list-inline
+	padding 0 
+	margin 0
+	
+ul.list-inline>li 
+	display inline-block 
+	
+.inline 
+	display inline
+	
+.owl-prev
+	position absolute
+	top 50%
+	left -40px
+	font-size 0
+	sprite($gallery_arr_left)
+	transform translateY(-50%)
+	
+	&:hover
+		sprite($gallery_arr_right)
+		transform rotate(180deg) translateY(50%)
+
+.owl-next
+	position absolute
+	top 50%
+	right -40px
+	font-size 0
+	sprite($gallery_arr_left)
+	transform rotate(180deg) translateY(50%)
+	
+	&:hover
+		sprite($gallery_arr_right)
+		transform translateY(-50%)
+		
+.owl-carousel--review .owl-prev
+	sprite($review_arr_left)
+	
+.owl-carousel--review .owl-prev:hover
+	sprite($review_arr_right)
+
+	
+.owl-carousel--review .owl-next
+	sprite($review_arr_left)
+	
+.owl-carousel--review .owl-next:hover
+	sprite($review_arr_right)

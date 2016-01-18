@@ -1,0 +1,125 @@
+.address
+	position relative
+	bg-cover(url(../img/content/address-bg.jpg))
+	background-position 50% 0%
+	padding 55px 0 65px
+	overflow hidden
+	
+	&:after,
+	&:before
+		position absolute
+	
+	&:before
+		content ''
+		top 0px
+		left 50%
+		width 0
+		height 0
+		border-top 150px solid #fff
+		border-left 1000px solid transparent	
+		
+	&:after
+		content ''
+		top 0px
+		right 50%
+		width 0
+		height 0
+		border-top 150px solid #fff
+		border-right 1000px solid transparent
+		
+.address-head--ico
+	display inline-block
+	width 62px
+	height 62px
+	background-color address-icon
+	border-radius 5px
+	position relative
+	margin-bottom 20px
+	
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 50%
+		transform translateX(-50%) translateY(-50%)
+		sprite($address_fly)
+		
+.h3--dark
+	color #444
+	font-size 26px
+	
+.post-address-aero
+	display inline-block
+	font-size 18px
+	font-style italic
+	line-height 26px
+	padding-top 10px
+	
+.office-row
+	padding-top 60px
+	
+.office
+	padding-left 60px
+	position relative
+	
+	&:before
+		content ''
+		top 0
+		left 0
+		position absolute
+		sprite($address_mark)
+		
+	
+	&__name
+		display inline-block
+		margin 0
+		display block
+		font-size 22px
+		font-weight 500
+		line-height 26px
+		
+	&__address
+		display inline-block
+		margin-top 10px
+		display block
+		font-size 20px
+		font-style italic
+		line-height 26px
+		
+	&__phone
+		display inline-block
+		margin-top 25px
+		font-size 26px
+		font-weight 500
+		line-height 26px
+		
+.contact
+	position relative
+	
+	&__email
+		position relative
+		margin-left 10px
+		font-size 22px
+		font-weight 400
+		line-height 26px
+		color #444
+		border-bottom 1px solid #444
+		
+		&-ico
+			display inline-block
+			sprite($address_email)
+			vertical-align middle
+			
+	&__social
+		margin-right 20px
+		display inline-block
+		
+		&--vk
+			sprite($social_vk)
+		&--fb
+			sprite($social_facebook)
+		&--insta
+			sprite($social_insta)
+			
+.social-row
+	margin-top 25px

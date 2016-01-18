@@ -1,0 +1,65 @@
+.advantage
+	margin-top 60px
+	
+.advantage__item
+	font-size 18px
+	font-weight 500
+	padding-left 118px
+	color #444
+	position relative
+	vertical-align middle
+	
+	&--glasses
+		margin-top 40px
+	&--photo
+		margin-top 40px
+	
+	&:before
+		content ''
+		position absolute
+		left 30px
+		top 50%
+		transform translateY(-50%)
+	
+	&--thumbs-up:before
+		sprite($adv_thumbs_1)
+		
+	&--glasses:before
+		sprite($adv_glasses)
+		
+	&--photo:before
+		sprite($adv_photo)
+		
+	&--bino:before
+		sprite($adv_1)
+		
+.advantage__item:nth-child(n+3)
+	padding-right 40px
+	
+@media (max-width 1199px)
+
+	.advantage__item
+		margin-bottom 40px
+		padding-left 90px
+		
+		&--thumbs-up:before
+			sprite($advantage_thumbs_up_md)
+		
+		&--glasses:before
+			sprite($advantage_glasses_md)
+			
+		&--photo:before
+			sprite($advantage_photo_md)
+			
+		&--bino:before
+			sprite($advantage_bino_md)
+
+	.advantage__item--glasses
+	.advantage__item--photo
+		margin-top 0
+		
+	.advantage__item:nth-child(n+3)
+		padding-right 0
+		
+
+		

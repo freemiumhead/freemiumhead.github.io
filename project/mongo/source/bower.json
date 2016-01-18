@@ -1,0 +1,27 @@
+{
+  "name": "mongo_project",
+  "version": "0.0.0",
+  "authors": [
+    "freemiumhead <freemiumhead@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "material-design-lite": "~1.0.5",
+    "Materialize": "materialize#~0.97.1",
+    "formstone": "~0.8.24"
+  }
+}

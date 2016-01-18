@@ -1,0 +1,54 @@
+.team
+	padding-top 90px
+	
+	&__member
+		width 160px
+		height 160px
+		margin 0 auto
+		position relative
+		
+		&-ico
+			position absolute
+			bottom -25px
+			right -25px
+			width 73px
+			height 73px
+			box-sizing border-box
+			border-radius 100%
+			background-color #474747
+			border 3px solid #fff
+			
+			&:after
+				content ''
+				position absolute
+				bottom 50%
+				right 50%
+				transform translateX(50%) translateY(50%)
+			
+			&--glasses:after
+				sprite($team_glasses)
+				
+			&--radio:after
+				sprite($team_radio)
+				
+			&--key:after
+				sprite($team_key)
+			
+		&-name,
+		&-pos
+			display block
+			text-align center
+			
+		&-name
+			font-size 22px
+			font-weight 500
+			line-height 26px
+			padding-top 40px
+			
+		&-pos
+			font-size 18px
+			font-weight 400
+			line-height 26px
+
+		
+		

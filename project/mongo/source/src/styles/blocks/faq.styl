@@ -1,0 +1,76 @@
+.accordion
+	width 100%
+
+	&__question
+		font-size 18px
+		font-weight 400
+		line-height 24px
+		margin-bottom 20px
+		padding-left 20px
+		position relative
+		outline none
+		
+		&:before
+			content ''
+			position absolute
+			top 50%
+			left 0px
+			sprite($faq_arr_up)
+			background-position-y -58px
+			transform rotate(180deg) translateY(50%)
+	
+	&__answer
+		font-size 16px
+		font-style italic
+		line-height 22px
+		padding 0px 0 20px 40px
+		
+.question__link
+	color #444
+	border-bottom 1px dashed #444
+	
+	
+.ui-accordion-header-active
+	position relative
+	
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 0px
+		transform translateY(-50%)
+		color #000
+		sprite($faq_arr_up)
+		background-position-y -58px
+		
+.tabs__list li
+	margin-right 20px
+	margin-bottom 20px
+	
+		
+.tab__link
+	padding 10px 17px
+	background-color whitesmoke
+	font-size 18px
+	font-weight 400
+	line-height 24px
+	color #444
+	outline none
+	
+.ui-tabs-active a
+	background-color #ec5f5f
+	color #fff
+	
+.cash ul
+	list-style none
+	padding 0
+	font-size 18px
+	line-height 24px
+	
+	a
+		border-bottom 1px solid #444
+		color #444
+	
+.cash p
+	font-size 18px
+	line-height 24px

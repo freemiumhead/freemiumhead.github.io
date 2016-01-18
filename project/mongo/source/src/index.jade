@@ -1,0 +1,413 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		title Монго
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,700&subset=latin,cyrillic', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+
+		// HEADER
+
+		header.header
+			.container
+				.row
+
+					.sm-9.lg-3.col
+						.logo
+							span.logo__txt Монгольфьеркин и КО
+
+					.sm-3.lg-9.col.text-right
+						nav.nav
+							ul.list-inline.pull-right
+								li: a.nav__link(href="#shortly") Кто мы
+								li: a.nav__link(href="#gallery") Фотографии
+								li: a.nav__link(href="#how") План полета
+								li: a.nav__link(href="#price") Заказать
+								li: a.nav__link(href="#team") Команда
+								li: a.nav__link(href="#address") Контакты
+
+		main
+
+			// PROMO
+
+			section.promo
+				.container
+					.row
+						.promo__content.sm-8.col.sm-offset-2.text-center
+							h1.h1 Организация полетов на воздушных шарах
+
+							span.flying-promo.flying-promo-1.sm-hide Увлекательная экскурсия
+							span.flying-promo.flying-promo-2.sm-hide Запоминающийся подарок
+							span.flying-promo.flying-promo-3.sm-hide Удивительный опыт
+							span.flying-promo.flying-promo-4.sm-hide Романтическая прогулка
+						
+							.sm-12.col.sm-hide
+								a.btn.start-scroll(href="#advantage") Подробнее
+
+			// ADVANTAGE
+
+			.advantage#advantage
+				.container
+					.row
+						.advantage__item.advantage__item--thumbs-up.sm-12.md-6.lg-3.col Современный надежный шар
+						.advantage__item.advantage__item--glasses.sm-12.md-6.lg-3.col Обучение пилотированию
+						.advantage__item.advantage__item--photo.sm-12.md-6.lg-3.col Фотосъемка в полете
+						.advantage__item.advantage__item--bino.sm-12.md-6.lg-3.col Потрясающие виды
+
+			// SHORTLY
+
+			section#shortly.shortly
+				.container
+					.row
+						.md-12.lg-4.col
+							h2.h2 Вкратце
+							p.shortly__txt 
+								| Более 5 лет воздухоплавательная команда 
+								| Нева-Аэро выполняет полёты на воздушных шарах для гостей 
+								| и жителей Петербурга над одними из самых живописных мест 
+								| России – Царским Селом и Павловском, возведенных в Пушкинском 
+								| районе Санкт-Петербурга. 
+
+							p.shortly__txt  Мы предлагаем полетать с нами!
+
+						.md-12.lg-8.col
+							.shortly__youtube
+								iframe(width='100%', height='100%', src='https://www.youtube.com/embed/ebYt-jlCeL4', frameborder='0', allowfullscreen='')
+						
+						.sm-12.col.md-hide
+							hr
+
+			// GALLERY
+
+			section#gallery.gallery
+				.container
+					.row
+						.sm-12.col
+							h2.h2.h2--center Галерея
+							.gallery__owl.owl-carousel
+								.carousel__item: img(src="img/content/gallery-1.jpg", alt="")
+								.carousel__item: img(src="img/content/gallery-2.jpg", alt="")
+								.carousel__item: img(src="img/content/gallery-3.jpg", alt="")
+								.carousel__item: img(src="img/content/gallery-4.jpg", alt="")
+
+			// HOW
+
+			section#how.how
+				.container
+					h2.h2.h2--center Как проходят полеты
+					.ball-area
+						ul.list-inline
+							li.ball.ball--1: span.ball__txt Взлет
+							li.ball.ball--2: span.ball__txt Набираем высоту
+							li.ball.ball--3: span.ball__txt Летаем
+							li.ball.ball--4: span.ball__txt Снижаемся 
+							li.ball.ball--5: span.ball__txt Садимся
+
+				.time-to-fly
+					.container
+						.row
+							.sm-4.col
+								h3.h3 До ближайшего полета
+							.sm-8.col
+								#countdown.countdown
+
+			// PRICE
+
+			section#price.price
+				.container
+					.row
+						.price__txt.sm-6.col
+							h2.h2 Рассчитать стоимость
+							p.price__description
+								| Итак, в назначенное время вы приехали на место полета. 
+								| Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.
+							p.price__description Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». 
+							p.price__description Выбирайте, куда мы полетим сегодня!
+
+						.form.price__form.sm-6.col
+							
+							label.form__label.sm-4.col(for="fly-way") Маршрут полета:
+							select#fly-way.form__select.sm-8.col(name="fly-way")
+								option(value="0")
+								option(value="1") Маршрут номер раз
+								option(value="2") Маршрут номер два
+								option(value="3") Маршрут номер три
+								option(value="4") Маршрут номер четыре
+								option(value="5") Маршрут номер пять
+
+							label.form__label.sm-4.col(for="people") Количество человек:
+							select#people.form__select.form__select--small.sm-2.col(name="people")
+								option(value="0")
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+								option(value="4") 4
+								option(value="5") 5
+
+							label.form__label.form__label--child.sm-4.col.text-right(for="child") Из них дети:
+							select#child.form__select.form__select--small.sm-2.col(name="child")
+								option(value="")
+								option(value="1") 1
+								option(value="2") 2
+								option(value="3") 3
+								option(value="4") 4
+								option(value="5") 5
+
+							label.form__label.sm-4.col(for="name") Имя и фамилия:
+							input#name.input-name.sm-8.col(type="text" name="name")
+
+							label.form__label.sm-4.col(for="phone") Телефон:
+							input#phone.input-phone.sm-8.col(type="text" name="phone")
+
+							.form-price
+								.sm-6.col
+									.price-sum Стоимость: 
+										span.price-sum__cash 9000 Р
+
+								.sm-6.col
+									button.btn.btn-cash.pull-right(type="submit") Полетели!
+						
+						.sm-12.col
+							hr
+
+			// FAQ
+
+			section.faq
+				.container
+					.row
+						.faq__faq.sm-6.col
+							h2.h2 Частые вопросы
+
+							#accordion
+								.accordion__question
+									.accordion-arr
+									a.question__link(href="") Что взять с собой в полет?
+								.accordion__answer 
+									| Обязательно возьмите с собой теплую 
+									| одежду и немного вкусной еды, которую не нужно 
+									| разогревать, а еще термос горячим чаем. 
+									| А мы обязательно дадим вам теплые пледы
+
+								.accordion__question
+									a.question__link(href="") Что если мы улетим не в ту сторону?
+								.accordion__answer
+									| Обязательно возьмите с собой теплую 
+									| одежду и немного вкусной еды, которую не нужно 
+									| разогревать, а еще термос горячим чаем. 
+									| А мы обязательно дадим вам теплые пледы
+
+								.accordion__question
+									a.question__link(href="") Что делать, если в полете станет плохо?
+								.accordion__answer
+									| Обязательно возьмите с собой теплую 
+									| одежду и немного вкусной еды, которую не нужно 
+									| разогревать, а еще термос горячим чаем. 
+									| А мы обязательно дадим вам теплые пледы
+
+								.accordion__question
+									a.question__link(href="") А полет – это действительно так здорово?
+								.accordion__answer
+									| Обязательно возьмите с собой теплую 
+									| одежду и немного вкусной еды, которую не нужно 
+									| разогревать, а еще термос горячим чаем. 
+									| А мы обязательно дадим вам теплые пледы
+
+						.faq__pay.sm-6.col
+							h2.h2 Способы оплаты
+
+							#tabs
+								ul.tabs__list.list-inline(role="tablist")
+									li
+										a.tab__link(href="#cash") Наличными
+									li
+										a.tab__link(href="#curer") Курьером
+									li
+										a.tab__link(href="#card") Картой
+
+								.tab-content
+									#cash.cash
+										p
+											| Вы можете оплатить услугу,  приехав к нам в офис. 
+											| Для этого Вам необходимо предупредить об этом:
+
+										ul
+											li — по телефону: +7 (812) 640-19-39
+											li — или по почте: 
+												a(href="mailto:mnebyvnebo@gmail.com") mnebyvnebo@gmail.com
+
+										p
+											| Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.
+
+									#curer.curer
+										p
+											| Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.
+										p
+											| Вы можете оплатить услугу,  приехав к нам в офис. 
+											| Для этого Вам необходимо предупредить об этом:
+
+									#card.card
+										ul
+											li — по телефону: +7 (812) 640-19-39
+											li — или по почте: 
+												a(href="mailto:mnebyvnebo@gmail.com") mnebyvnebo@gmail.com
+
+										p
+											| Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.
+
+			// DIGITALS
+
+			section.digitals
+				.container.text-center
+					.digital
+						.digital__item 700
+							.digital__item--txt Полетов 
+								br
+								| в год
+
+						.digital__item 3000
+							.digital__item--txt Средняя 
+								br
+								| дальность в метрах
+
+						.digital__item 3
+							.digital__item--txt Воздушных 
+								br
+								| шара
+
+						.digital__item 12
+							.digital__item--txt Человек 
+								br
+								| в команде
+
+			// TEAM
+
+			section#team.team
+				.container
+					.row
+						h2.h2.h2--center Команда инструкторов
+						.sm-3.col
+							.team__member.team__member--1
+								img(src="img/content/team-1.jpg", alt="Маша")
+								.team__member-ico.team__member-ico--glasses
+							.team__member-name Мария Мариева
+							.team__member-pos Старший пилот
+
+						.sm-3.col
+							.team__member.team__member--2
+								img(src="img/content/team-2.jpg", alt="Надя")
+								.team__member-ico.team__member-ico--glasses
+							.team__member-name Надежда Надеждова
+							.team__member-pos Второй пилот
+
+						.sm-3.col
+							.team__member.team__member--3
+								img(src="img/content/team-3.jpg", alt="Ира")
+								.team__member-ico.team__member-ico--radio
+							.team__member-name Ирина Иринова
+							.team__member-pos Авиадиспетчер
+
+						.sm-3.col
+							.team__member.team__member--4
+								img(src="img/content/team-4.jpg", alt="Алена")
+								.team__member-ico.team__member-ico--key
+							span.team__member-name Алена Аленова
+							span.team__member-pos Авиатехник
+
+
+			// REVIEW
+
+			section.review
+				.container
+					h2.h2.h2--center Отзывы
+					.row
+						.sm-12
+							.owl-carousel--review.text-center
+
+								.carousel__item
+									figure
+										.reviewer-img
+											img(src="img/content/review-1.jpg", alt="")
+										figcaption
+											span.reviewer-name Ольга Алексеева
+											blockquote.reviewer-bq
+												| Оооо это было чудесно!!! 
+												| Я не знала что воздушные шары такие огромные. 
+												| Забавно, большой шар и маленькая корзинка. 
+												| Полет восхитительный, выше всяких похвал. 
+												| Мы побывали в самом красивом месте на Земле - 
+												| в небе, оттуда открываются потрясающие виды.
+
+								.carousel__item
+									figure
+										.reviewer-img
+											img(src="img/content/review-2.jpg", alt="")
+										figcaption
+											span.reviewer-name Артем Рыбкин
+											blockquote.reviewer-bq
+												| Жене подарил полет на воздушном шаре. 
+												| Сделал сюрприз на день рождения. 
+												| Жена была в восторге, мне и самому 
+												| понравилось, очень необычные ощущения от 
+												| полета, хоть не самолет, а летит быстро, 
+												| маршрут подобрали красивый. Cпасибо вам, 
+												| нам все понравилось.
+									
+								
+			// ADDRESS
+
+			section#address.address
+				.container
+					.row
+						.sm-12.text-center
+							span.address-head--ico
+							h3.h3.h3--dark Запишите адрес аэропорта
+							span.post-address-aero Всеволожск, улица Аэродромная 19а
+
+					.row.office-row
+						.sm-4.col.office
+							span.office__name Наш офис в Питере:
+							span.office__address Литейный 14Б 
+								br
+								| 12:00 - 19:00
+							span.office__phone 746-67-33
+
+						.sm-4.col.office
+							span.office__name Наш офис во Всеволожске:
+							span.office__address Аэродромная 19А
+								br
+								| 12:00 - 19:00
+							span.office__phone 746-67-33
+
+						.sm-4.col.contact
+							span.contact__email-ico
+							a.contact__email(href="mailto:mnebyvnebo@gmail.com") mnebyvnebo@gmail.com
+							.social-row
+								a.contact__social.contact__social--vk(href="http://vk.com" target="_blank")
+								a.contact__social.contact__social--fb(href="http://facebook.com" target="_blank")
+								a.contact__social.contact__social--insta(href="http://instagram.com" target="_blank")
+
+
+		// FOOTER
+
+		footer.footer.header
+			.container
+				.row
+
+					.sm-3.col
+						.logo
+							span.logo__txt Монгольфьеркин и КО
+
+					.sm-9.col
+						nav
+							ul.list-inline.pull-right
+								li: a.nav__link(href="#shortly") Кто мы
+								li: a.nav__link(href="#gallery") Фотографии
+								li: a.nav__link(href="#how") План полета
+								li: a.nav__link(href="#price") Заказать
+								li: a.nav__link(href="#team") Команда
+								li: a.nav__link(href="#address") Контакты
+	
+		script(src="js/main.js")
