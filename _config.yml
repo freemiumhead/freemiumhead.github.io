@@ -1,11 +1,11 @@
 # Site settings
-title:       Nesteroff
-email:       hello@nesteroff.com
+title:       dm-nesteroff <br><small>in progress...</small>
+email:       freemiumhead@gmail.com
 author:      freemiumhead
 description: ""
 baseurl:     ""
 url:         "http://nesteroff.com"
-date_format: "%b %-d, %Y"
+date_format: "%d-%m-%Y"
 
 # Google services
 google_analytics:
@@ -13,14 +13,14 @@ google_verification:
 
 # Optional features
 animated:             false
-show_related_posts:   false
+show_related_posts:   true
 show_post_footers:    false
 show_social_icons:    true
-ajaxify_contact_form: false
+ajaxify_contact_form: true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: dm-nesteroff
 
 # Social icons
 github_username: freemiumhead
@@ -36,10 +36,10 @@ paypal_url:
 flattr_button:
 
 # Post sharing icons
-show_sharing_icons: true
-share_text: 'Share this post!'
+show_sharing_icons: false
+share_text: ''
 # Change to 'true' to enable individual icons
-share_facebook: false
+share_facebook: true
 share_twitter: true
 share_googleplus: true
 share_linkedin: false
@@ -57,3 +57,6 @@ permalink:    pretty
 paginate:     10
 sass:
   compressed: true
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"

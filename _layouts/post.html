@@ -9,15 +9,31 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
+  <span class="post-meta">{% assign m = page.date | date: "%-m" %}
+                          {{ page.date | date: "%-d" }}
+                          {% case m %}
+                            {% when '1' %}Января
+                            {% when '2' %}Февраля
+                            {% when '3' %}Марта
+                            {% when '4' %}Апреля
+                            {% when '5' %}Мая
+                            {% when '6' %}Июня
+                            {% when '7' %}Июля
+                            {% when '8' %}Августа
+                            {% when '9' %}Сентября
+                            {% when '10' %}Октября
+                            {% when '11' %}Ноября
+                            {% when '12' %}Декабря
+                          {% endcase %}
+                          {{ page.date | date: "%Y" }}</span><br>
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
   <span class="post-meta small">
   {% if page.minutes %}
-    {{ page.minutes }} minute read
+    {{ page.minutes }} мин. на прочтение
   {% else %}
-    {{ minutes }} minute read
+    {{ minutes }} мин. на прочтение
   {% endif %}
   </span>
 </div>
@@ -51,7 +67,7 @@ layout: default
 {% endif %}
 
 {% if site.show_related_posts %}
-  <h3 class="related-post-title">Related Posts</h3>
+  <h3 class="related-post-title">Ещё посты</h3>
   {% for post in site.related_posts %}
     <div class="post ml2">
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
