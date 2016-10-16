@@ -11,6 +11,12 @@
 
 .site-header .site-title {
   font-size: $h2;
+  border: 10px solid #000;
+  padding: 10px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .site-nav {

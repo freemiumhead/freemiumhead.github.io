@@ -1,10 +1,10 @@
 # Site settings
-title:       dm-nesteroff <br><small>in progress...</small>
-email:       hello@nesteroff.com
+title:       FRMHD blog
+email:       freemiumhead@gmail.com
 author:      freemiumhead
 description: ""
 baseurl:     ""
-url:         "http://nesteroff.com"
+url:         "http://freemiumhead.github.io"
 date_format: "%d-%m-%Y"
 
 # Google services
@@ -14,7 +14,7 @@ google_verification:
 # Optional features
 animated:             false
 show_related_posts:   true
-show_post_footers:    false
+show_post_footers:    true
 show_social_icons:    true
 ajaxify_contact_form: false
 
